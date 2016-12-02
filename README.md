@@ -1,1 +1,3 @@
 # EEPROM_24LC1025_test
+
+24LC1025の動作テスト用 Arduino M0を使用しているのでSerialではなくSerialUSBです。
