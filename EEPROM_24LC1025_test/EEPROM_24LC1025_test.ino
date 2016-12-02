@@ -43,7 +43,7 @@ void eprRead(int addr, int l) {
   Wire.write(highByte(addr));
   Wire.write(lowByte(addr));
   Wire.endTransmission();
-  Wire.requestFrom(EPR_ADDR, len);
+  Wire.requestFrom(EPR_ADDR, l);
  
   while (Wire.available()) {
     ret = Wire.read();
