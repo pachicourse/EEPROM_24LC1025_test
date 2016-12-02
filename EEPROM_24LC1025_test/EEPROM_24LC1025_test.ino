@@ -16,7 +16,7 @@ void setup() {
   int len = sizeof(b) / sizeof(byte);
 
 //  eprWrite(0, b, len);
-  eprRead(0, len);
+//   eprRead(0, len);
 }
 
 void loop() {
