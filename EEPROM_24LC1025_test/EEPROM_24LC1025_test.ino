@@ -13,7 +13,7 @@ void setup() {
   delay(1000);
   
   byte b[] = {5,10,20,40,80,160};
-  int len = sizeof(b) / sizeof(byte);
+  int len = sizeof(byte);
 
 //  eprWrite(0, b, len);
 //  eprRead(0, len);
@@ -36,7 +36,7 @@ int eprWrite(int addr, byte b[], int l) {
   return ans;
 }
  
-void eprRead(int addr, int len) {
+void eprRead(int addr, int l) {
   byte ret;
   
   Wire.beginTransmission(EPR_ADDR);
